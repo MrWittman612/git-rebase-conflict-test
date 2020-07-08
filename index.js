@@ -13,3 +13,9 @@ function multiplies(num1, num2) {
 }
 
 console.log(multiplies(3, 5));
+
+function subtract(a, b) {
+	return a - b;
+}
+
+console.log(subtract(8, 3));
