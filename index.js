@@ -7,3 +7,9 @@ function add(a, b) {
 	return a + b;
 }
 console.log(add(2, 3));
+
+function multiplies(num1, num2) {
+	return num1 * num2;
+}
+
+console.log(multiplies(3, 5));
