@@ -6,7 +6,4 @@ console.log('commit 3 side branch');
 function add(a, b) {
 	return a + b;
 }
-
-const num = add(2, 3);
-
-console.log(num);
+console.log(add(2, 3));
