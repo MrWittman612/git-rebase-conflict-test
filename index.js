@@ -19,3 +19,5 @@ function subtract(a, b) {
 }
 
 console.log(subtract(8, 3));
+
+console.log('wow!', multiplies(subtract(8, 3), 4));
