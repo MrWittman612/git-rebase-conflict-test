@@ -27,18 +27,21 @@ function exponentiation(num1, num2) {
 console.log(exponentiation(3, 5));
 
 // test how long a function takes to run
+// This does not work must find out why ref https://code.visualstudio.com/docs/editor/versioncontrol
+//
+//
 
 function printElapsedTime(fTest) {
-	let sT = Date.now(),
-		vReturn = fTest(),
-		eT = Date.now();
+	let sT = Date.now();
+	vReturn = fTest();
+	eT = Date.now();
 
 	console.log(`Elapsed time: ${String(eT - sT)} milliseconds`);
 	return vReturn;
 }
 
-const doWork = add(2, 3);
+const doWork = add;
 
-const timeAdd = printElapsedTime(doWork);
+const timeTaken = printElapsedTime(doWork(2, 3));
 
-console.log(timeAdd);
+console.log(timeTaken);
