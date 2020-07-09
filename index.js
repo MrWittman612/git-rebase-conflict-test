@@ -3,6 +3,9 @@ console.log('commit 2 master');
 console.log('second change side branch 1');
 console.log('commit 3 side branch');
 
+const time = new Date();
+console.log(time);
+
 function add(a, b) {
 	return a + b;
 }
